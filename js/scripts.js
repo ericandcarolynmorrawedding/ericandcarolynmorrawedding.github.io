@@ -204,7 +204,7 @@ $(document).ready(function () {
             */
         } else {
             //https://script.google.com/macros/s/AKfycbyAlWawhCfJ0RUx_6L0ZbmRkbaDU_9HFLvsBHdVGur5hIsKxRgzXdqdfZuqZor5Ad1LbQ/exec
-            $.post('https://script.google.com/macros/s/AKfycbyAlWawhCfJ0RUx_6L0ZbmRkbaDU_9HFLvsBHdVGur5hIsKxRgzXdqdfZuqZor5Ad1LbQ/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbyEdJtBaJKPgSE5RpvBOaCeUAHuHnjuC1njHJ_pfX89nNMHGJbFq1dP5z3bttI25Ft5LA/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
