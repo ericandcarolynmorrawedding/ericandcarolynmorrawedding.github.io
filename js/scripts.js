@@ -141,13 +141,22 @@ $(document).ready(function () {
 
 
     /********************** Toggle Map Content **********************/
-    $('#btn-show-map').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+    $('#btn-show-map-wedding').click(function () {
+        $('#map-content-wedding').toggleClass('toggle-map-content');
+        $('#btn-show-content-wedding').toggleClass('toggle-map-content');
     });
-    $('#btn-show-content').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
+    $('#btn-show-content-wedding').click(function () {
+        $('#map-content-wedding').toggleClass('toggle-map-content');
+        $('#btn-show-content-wedding').toggleClass('toggle-map-content');
+    });
+
+    $('#btn-show-map-reception').click(function () {
+        $('#map-content-reception').toggleClass('toggle-map-content');
+        $('#btn-show-content-reception').toggleClass('toggle-map-content');
+    });
+    $('#btn-show-content-reception').click(function () {
+        $('#map-content-reception').toggleClass('toggle-map-content');
+        $('#btn-show-content-reception').toggleClass('toggle-map-content');
     });
 
     /********************** Add to Calendar **********************/
@@ -220,7 +229,7 @@ function initMap() {
     var location1 = {lat: 40.7644935, lng: -73.5182186};
     var map1 = new google.maps.Map(document.getElementById('map-canvas-wedding'), {
         zoom: 15,
-        center: location,
+        center: location1,
         scrollwheel: false
     });
 
